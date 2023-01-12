@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 /**
  * @author Olga Maciaszek-Sharma
  */
-@FeignClient(value = "tanzu-java-web-app", url = "http://http://tanzu-java-web-app.my-apps.tap.tap-aks-omaciaszeksh.tapdemo.vmware.com/")
+@FeignClient(value = "tanzu-java-web-app", url = "http://tanzu-java-web-app.my-apps.tap.tap-aks-omaciaszeksh.tapdemo.vmware.com/")
 interface TestFeignClient {
 
 	@GetMapping("/")
