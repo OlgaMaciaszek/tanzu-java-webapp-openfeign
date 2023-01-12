@@ -1,6 +1,13 @@
 spring:
   application:
     name: tanzu-java-web-app
+  cloud:
+    discovery:
+      client:
+        simple:
+          instances:
+            tanzu-java-web-app:
+              - uri: http://tanzu-java-web-app.my-apps.tap.tap-aks-omaciaszeksh.tapdemo.vmware.com/
 management:
   endpoints:
     web:
